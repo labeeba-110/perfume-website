@@ -6,8 +6,8 @@
 
 :root {
     --color-primary: #1a1a1a;
-    --color-secondary: #a44764;
-    --color-accent: #db7c7f;
+    --color-secondary: #cd7d96;
+    --color-accent: #790e29;
     --color-text: #2c2c2c;
     --color-text-light: #100202;
     --color-white: #ffffff;
@@ -256,10 +256,9 @@ h3 {
 }
 
 .product-grid {
-    display: flex;
-    grid-template-columns: repeat(5, 1fr);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: var(--spacing-md);
-    /* max-width: 2000px; */
     margin-bottom: var(--spacing-lg);
 }
 
